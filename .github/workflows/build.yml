@@ -27,8 +27,10 @@ jobs:
       matrix:
         boards: [rock-5b]
         build_systems: [rbuild]
-        distros: [debian, ubuntu]
-        flavors: [kde, xfce, cli]
+        #distros: [debian, ubuntu]
+        #flavors: [kde, xfce, cli]
+        distros: [debian]
+        flavors: [cli]
         exclude:
           - build_systems: debos
             distros: debian
